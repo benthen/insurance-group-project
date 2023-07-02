@@ -21,8 +21,6 @@ class _CustomerRegisterPageWidgetState
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
-            Flexible(
-              child:
             Padding(
               padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 20),
               child: Container(
