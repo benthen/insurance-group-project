@@ -1,16 +1,14 @@
+import 'package:agent/agentcustomer.dart';
 import 'package:flutter/material.dart';
-
 
 class AgentCustomerList extends StatefulWidget {
   const AgentCustomerList({super.key});
-
 
   @override
   State<AgentCustomerList> createState() => _AgentCustomerListState();
 }
 
 class _AgentCustomerListState extends State<AgentCustomerList> {
-
   bool isChecked = false;
 
   @override
@@ -102,7 +100,13 @@ class _AgentCustomerListState extends State<AgentCustomerList> {
                   Padding(
                     padding: const EdgeInsets.fromLTRB(0, 20, 10, 0),
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        /*Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => AgentCustomer()),
+                        );*/
+                      },
                       style: ElevatedButton.styleFrom(
                         primary: Colors.blue,
                         padding: const EdgeInsets.fromLTRB(24, 0, 24, 0),
@@ -192,7 +196,12 @@ class _AgentCustomerListState extends State<AgentCustomerList> {
                                     height: 40,
                                     child: ElevatedButton(
                                       onPressed: () {
-                                        print('Button pressed ...');
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  AgentCustomer()),
+                                        );
                                       },
                                       child: const Text(
                                         'View',

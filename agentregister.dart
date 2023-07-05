@@ -1,3 +1,4 @@
+import 'package:agent/agenthome.dart';
 import 'package:flutter/material.dart';
 
 class AgentRegister extends StatefulWidget {
@@ -255,7 +256,12 @@ class _AgentRegisterState extends State<AgentRegister> {
               padding: EdgeInsets.fromLTRB(8, 10, 8, 10),
               child: ElevatedButton(
                 onPressed: () {
-                  // Handle button press here
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => AgentHomePage(),
+                    ),
+                  );
                 },
                 child: Text(
                   'Sign Up',

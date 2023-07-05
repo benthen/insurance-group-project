@@ -1,3 +1,4 @@
+import 'package:agent/agentcustomerlist.dart';
 import 'package:flutter/material.dart';
 
 class AgentHomePage extends StatefulWidget {
@@ -69,42 +70,52 @@ class _AgentHomePageState extends State<AgentHomePage> {
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Container(
-                      width: 150,
-                      height: 180,
-                      decoration: const BoxDecoration(
-                        color: Color(0xFFFF6E6E),
-                        shape: BoxShape.rectangle,
-                      ),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(8),
-                              child: Image.network(
-                                'https://picsum.photos/seed/509/600',
-                                width: 100,
-                                height: 100,
-                                fit: BoxFit.cover,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => AgentCustomerList(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        width: 150,
+                        height: 180,
+                        decoration: const BoxDecoration(
+                          color: Color(0xFFFF6E6E),
+                          shape: BoxShape.rectangle,
+                        ),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(8),
+                                child: Image.network(
+                                  'https://picsum.photos/seed/509/600',
+                                  width: 100,
+                                  height: 100,
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                             ),
-                          ),
-                          const Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
-                            child: Text(
-                              'Customer List',
-                              style: TextStyle(
-                                  fontFamily: 'Readex Pro',
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.w500,
-                                  color: Colors.white),
+                            const Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                              child: Text(
+                                'Customer List',
+                                style: TextStyle(
+                                    fontFamily: 'Readex Pro',
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.w500,
+                                    color: Colors.white),
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                     Container(
