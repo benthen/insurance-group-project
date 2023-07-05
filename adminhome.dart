@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:project/adminconsultantlist.dart';
+import 'package:project/admincustomerlist.dart';
 
 class AdminHomePageWidget extends StatefulWidget {
   const AdminHomePageWidget({Key? key}) : super(key: key);
@@ -48,13 +50,20 @@ class _AdminHomePageWidgetState extends State<AdminHomePageWidget> {
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Container(
+                      GestureDetector(onTap: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const AdminCustomerListPageWidget()),
+                        );
+                      }, 
+                      child: Container(
                         width: 180,
                         height: 225,
                         decoration: BoxDecoration(
                           color: Color(0xFFFF7F7F),
                           borderRadius: BorderRadius.circular(10),
                         ),
+                        
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -83,8 +92,16 @@ class _AdminHomePageWidgetState extends State<AdminHomePageWidget> {
                             ),
                           ],
                         ),
-                      ),
-                      Container(
+                      )),
+
+                     
+                      GestureDetector(onTap: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const AdminConsultantListPageWidget()),
+                        );
+                      }, 
+                      child: Container(
                         width: 180,
                         height: 225,
                         decoration: BoxDecoration(
@@ -121,6 +138,7 @@ class _AdminHomePageWidgetState extends State<AdminHomePageWidget> {
                           ],
                         ),
                       ),
+                    )
                     ],
                   ),
                 ),

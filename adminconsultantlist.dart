@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project/consultantdetailpage.dart';
 
 class AdminConsultantListPageWidget extends StatefulWidget {
   const AdminConsultantListPageWidget({Key? key}) : super(key: key);
@@ -155,7 +156,7 @@ class _AdminConsultantListPageWidgetState
                                     fontSize: 20,
                                   ),
                                 ),
-                                const Row(
+                                 Row(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Text(
@@ -183,7 +184,12 @@ class _AdminConsultantListPageWidgetState
                                         const EdgeInsetsDirectional.fromSTEB(
                                             0, 0, 10, 0),
                                     child: ElevatedButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(builder: (context) => const ConsultantDetailPageWidget()),
+                                        );
+                                      },
                                       style: ElevatedButton.styleFrom(
                                         primary: Theme.of(context).primaryColor,
                                         padding: const EdgeInsetsDirectional

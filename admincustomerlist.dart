@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:project/consultantdetailpage.dart';
+import 'package:project/customerdetailpage.dart';
 
 class AdminCustomerListPageWidget extends StatefulWidget {
   const AdminCustomerListPageWidget({Key? key}) : super(key: key);
@@ -183,7 +185,10 @@ class _AdminCustomerListPageWidgetState
                                         0, 0, 10, 0),
                                     child: ElevatedButton(
                                       onPressed: () {
-                                        print('Button pressed ...');
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(builder: (context) => const CustomerDetailPageWidget()),
+                                        );
                                       },
                                       child: Text(
                                         'View',
