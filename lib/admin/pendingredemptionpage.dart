@@ -200,9 +200,9 @@ class _PendingRedemptionPageWidgetState
                                                             style:
                                                                 ElevatedButton
                                                                     .styleFrom(
-                                                              primary: Color(
+                                                              backgroundColor: Color(
                                                                   0xFFFF0202),
-                                                              onPrimary:
+                                                              foregroundColor:
                                                                   Colors.white,
                                                               elevation: 3,
                                                               shape:
@@ -255,9 +255,9 @@ class _PendingRedemptionPageWidgetState
                                                           child: Text('Reject'),
                                                           style: ElevatedButton
                                                               .styleFrom(
-                                                            primary: Color(
+                                                            backgroundColor: Color(
                                                                 0xFFFF0202),
-                                                            onPrimary:
+                                                            foregroundColor:
                                                                 Colors.white,
                                                             elevation: 3,
                                                             shape:
@@ -416,9 +416,9 @@ class _PendingRedemptionPageWidgetState
                                                             style:
                                                                 ElevatedButton
                                                                     .styleFrom(
-                                                              primary: Color(
+                                                              backgroundColor: Color(
                                                                   0xFFFF0202),
-                                                              onPrimary:
+                                                              foregroundColor:
                                                                   Colors.white,
                                                               elevation: 3,
                                                               shape:
@@ -471,9 +471,9 @@ class _PendingRedemptionPageWidgetState
                                                           child: Text('Reject'),
                                                           style: ElevatedButton
                                                               .styleFrom(
-                                                            primary: Color(
+                                                            backgroundColor: Color(
                                                                 0xFFFF0202),
-                                                            onPrimary:
+                                                            foregroundColor:
                                                                 Colors.white,
                                                             elevation: 3,
                                                             shape:

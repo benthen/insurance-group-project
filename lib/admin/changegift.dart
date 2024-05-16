@@ -183,7 +183,7 @@ class _GiftDetailsPageWidgetState extends State<GiftDetailsPageWidget> {
                           const EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          primary: Colors.red,
+                          backgroundColor: Colors.red,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10),
                           ),

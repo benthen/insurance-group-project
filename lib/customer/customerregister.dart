@@ -486,7 +486,7 @@ class _CustomerRegisterPageWidgetState
                                     0, 30, 0, 0),
                                 child: ElevatedButton(
                                     style: ElevatedButton.styleFrom(
-                                        primary: Colors.red,
+                                        backgroundColor: Colors.red,
                                         shape: RoundedRectangleBorder(
                                             borderRadius:
                                                 BorderRadius.circular(10)),

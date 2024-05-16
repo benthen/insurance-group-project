@@ -105,7 +105,7 @@ class _AdminCustomerListPageWidgetState
                   child: ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.blue,
+                      backgroundColor: Colors.blue,
                       padding: const EdgeInsets.fromLTRB(24, 0, 24, 0),
                       elevation: 3,
                       shape: RoundedRectangleBorder(

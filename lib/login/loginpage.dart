@@ -243,7 +243,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                 0, 10, 0, 0),
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
-                                  primary: Colors.red,
+                                  backgroundColor: Colors.red,
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(10)),
                                   padding: const EdgeInsets.fromLTRB(

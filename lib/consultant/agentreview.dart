@@ -82,7 +82,7 @@ class _AgentReviewPageWidgetState extends State<AgentReviewPageWidget> {
                             ),
                           ),
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.blue,
+                            backgroundColor: Colors.blue,
                             padding: EdgeInsets.symmetric(horizontal: 24),
                             elevation: 3,
                             shape: RoundedRectangleBorder(
@@ -301,7 +301,7 @@ class _AgentReviewPageWidgetState extends State<AgentReviewPageWidget> {
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.blue,
+                      backgroundColor: Colors.blue,
                       minimumSize: Size(296, 59),
                       padding: EdgeInsets.symmetric(horizontal: 24),
                       elevation: 3,
