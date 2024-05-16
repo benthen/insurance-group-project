@@ -525,7 +525,7 @@ class _AgentRegisterState extends State<AgentRegister> {
                                   const SizedBox(width: 20),
                                   Text(
                                     filename,
-                                    style: TextStyle(color: Colors.blue),
+                                    style: TextStyle(color: const Color.fromARGB(255, 73, 173, 255)),
                                   )
                                 ],
                               ),
