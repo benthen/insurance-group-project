@@ -83,7 +83,7 @@ class _AdminCustomerListPageWidgetState
                         ),
                         focusedErrorBorder: OutlineInputBorder(
                           borderSide: BorderSide(
-                            color: Theme.of(context).errorColor,
+                            color: Colors.red,
                             width: 2,
                           ),
                           borderRadius: BorderRadius.circular(5),
